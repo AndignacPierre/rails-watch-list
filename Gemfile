@@ -75,3 +75,6 @@ gem "sassc-rails" # Uncomment this line
 
 #Faker Gems
 gem 'faker'
+
+#Photos
+gem "cloudinary"
