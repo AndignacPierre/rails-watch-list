@@ -1,0 +1,7 @@
+<div class="container">
+  <h1><%= @list.name %></h1>
+
+  <%= link_to "↩️Back", lists_path %> |
+  <%= link_to "✎Edit", edit_list_path(@list) %> |
+  <%= link_to "🗑️Remove", list_path(@list), data: { turbo_met: :delete, turbo_confirm: "Are you sure ?" } %>
+</div>

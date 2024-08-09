@@ -60,9 +60,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_09_102701) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title", null: false
-    t.string "overview", null: false
+    t.text "overview", null: false
     t.string "poster_url"
-    t.integer "rating"
+    t.float "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["title"], name: "index_movies_on_title", unique: true

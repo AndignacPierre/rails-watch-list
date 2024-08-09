@@ -1,0 +1,9 @@
+<%= simple_form_for @list, html: { class: 'form-horizontal' } do |f| %>
+    <div class="form-group">
+      <%= f.input :name, label: 'New movie', input_html: { class: 'form-control' }, required: false, placeholder: "The Lord of the Rings, Star Wars, ..."; %>
+    </div>
+
+    <div class="form-group">
+      <%= f.button :submit, class: 'btn btn-primary' %>
+    </div>
+  <% end %>
