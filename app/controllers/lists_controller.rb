@@ -21,6 +21,6 @@ class ListsController < ApplicationController
   private
 
   def list_params
-    params.require(:list).permit(:name, :title)
+    params.require(:list).permit(:name, :title, :photo)
   end
 end

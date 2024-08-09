@@ -1,5 +1,6 @@
 <div class="container">
   <h1><%= @list.name %></h1>
+  <%= @list.photo %>
 
   <%= link_to "↩️Back", lists_path %> |
   <%= link_to "✎Edit", edit_list_path(@list) %> |
