@@ -1,7 +1,15 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  color: white;
+}
+
 .card-category {
+  position: relative;
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,19 +19,12 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 
-.text-banner {
-  position: absolute;
-  right: 10px;
-  top: 20px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  color: white;
+  .text-banner {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
 }
 
 .cards-container {
@@ -32,7 +33,6 @@
   gap: 20px; /* Adds space between cards */
   justify-content: space-between; /* Distributes cards evenly */
 }
-
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
